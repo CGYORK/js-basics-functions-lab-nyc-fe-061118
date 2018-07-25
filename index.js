@@ -28,6 +28,8 @@ function calculatesFarePrice(start, destination) {
   return 0;
   } else if ((uptownDistance > 400) && (uptownDistance < 2000)){
   return (uptownDistance - 400) * 0.02;
+  } else if ((downtownDistance > 400) && (downtownDistance < 2000)){
+  return (downtownDistance - 400) * 0.02;
   } else if ((uptownDistance > 2000) && (uptownDistance < 2500) || ((downtownDistance > 2000) && (downtownDistance < 2500))) {
   return 25;
   } else if (((uptownDistance) > 2500) || ((downtownDistance) > 2500)){
